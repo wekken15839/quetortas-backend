@@ -20,6 +20,7 @@ authRouter.post(
   validatePhoto,
   register
 );
+authRouter.post("/register", register);
 authRouter.post("/login", login);
 authRouter.post("/logout", logout);
 authRouter.post("/profile", validateAuth, profile);
